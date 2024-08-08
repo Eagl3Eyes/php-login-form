@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 if (!isset($_SESSION['user']) || (time() - $_SESSION['last_activity']) > 60) {
     session_unset();
     session_destroy();
@@ -31,16 +30,18 @@ $user = $_SESSION['user'];
             <h1 class="text-2xl font-bold mb-4">Welcome to Your Profile!</h1>
 
             <p class="font-bold">
-                <?php echo htmlspecialchars($user['first_name']);
-                echo ' ';
-                echo htmlspecialchars($user['last_name']);
-                ?>
+                <?php echo htmlspecialchars($user['first_name']); ?>
+                <?php echo ' '; ?>
+                <?php echo htmlspecialchars($user['last_name']); ?>
             </p>
 
-            <p class="font-bold">Username: <?php echo htmlspecialchars($user['username']); ?></p>
-            <p class="font-bold">Email: <?php echo htmlspecialchars($user['email']); ?></p>
 
-            <a href="logout.php" class="text-blue-500 hover:text-blue-700">Logout</a>
+
+            <p><strong>Username:</strong> <?php echo htmlspecialchars($user['username']); ?></p>
+
+            <p><strong>Email:</strong> <?php echo htmlspecialchars($user['email']); ?></p>
+
+            <a href="logout.php" class="text-blue-500 hover:text-blue-700" id="logout">Logout</a>
         </div>
     </div>
 </body>
