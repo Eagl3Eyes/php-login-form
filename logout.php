@@ -2,6 +2,9 @@
 session_start();
 session_unset();
 session_destroy();
-header("Location: index.php");
-exit();
+
+echo '<script>
+    localStorage.removeItem("posts");
+    window.location.href = "index.php";
+</script>';
 ?>

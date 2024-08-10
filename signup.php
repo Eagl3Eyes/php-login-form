@@ -75,6 +75,7 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
 
+
         $_SESSION['user'] = [
             'first_name' => $first_name,
             'last_name' => $last_name,
@@ -83,7 +84,9 @@
             'password' => $password
         ];
 
+
         $_SESSION['last_activity'] = time();
+
 
         header("Location: profile.php");
         exit();
