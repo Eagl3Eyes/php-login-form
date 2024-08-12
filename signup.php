@@ -1,3 +1,33 @@
+<?php
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+
+    $_SESSION['user'] = [
+        'first_name' => $first_name,
+        'last_name' => $last_name,
+        'username' => $username,
+        'email' => $email,
+        'password' => $password
+    ];
+
+
+    $_SESSION['last_activity'] = time();
+
+
+    header("Location: profile.php");
+    exit();
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,33 +95,7 @@
         </form>
     </div>
 
-    <?php
-    session_start();
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $first_name = $_POST['first_name'];
-        $last_name = $_POST['last_name'];
-        $username = $_POST['username'];
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-
-
-        $_SESSION['user'] = [
-            'first_name' => $first_name,
-            'last_name' => $last_name,
-            'username' => $username,
-            'email' => $email,
-            'password' => $password
-        ];
-
-
-        $_SESSION['last_activity'] = time();
-
-
-        header("Location: profile.php");
-        exit();
-    }
-    ?>
 </body>
 
 </html>
