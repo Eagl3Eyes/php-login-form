@@ -41,7 +41,7 @@ $user = $_SESSION['user'];
     <!-- Cover Photo and Profile Picture Section -->
     <div class="bg-white shadow-md">
         <div class="relative">
-            <img src="<?php echo empty($user['cover_img']) ? 'https://via.placeholder.com/150' : htmlspecialchars($user['cover_img']); ?>"
+            <img src="<?php echo empty($user['cover_img']) ? 'https://via.placeholder.com/1200' : htmlspecialchars($user['cover_img']); ?>"
                 alt="Cover Photo" class="w-full h-48 object-cover">
             <div class="absolute -bottom-16 left-4">
                 <img src="<?php echo empty($user['profile_img']) ? 'https://via.placeholder.com/150' : htmlspecialchars($user['profile_img']); ?>"
