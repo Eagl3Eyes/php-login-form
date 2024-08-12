@@ -57,7 +57,9 @@
 
 
     <?php
+    ob_start();
     session_start();
+    
 
 
     $users = [
@@ -124,6 +126,8 @@
 
         echo "<div class='text-red-500 text-center mt-4'>Invalid email or password.</div>";
     }
+
+    ob_end_flush();
     ?>
 </body>
 
