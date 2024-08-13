@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="mb-4">
                     <input
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        id="email" name="email" type="text" placeholder="Email address or phone number" required>
+                        id="email" name="email" type="text" placeholder="Email address or username" required>
                 </div>
                 <div class="mb-6">
                     <input
