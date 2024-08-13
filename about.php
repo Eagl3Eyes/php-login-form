@@ -53,7 +53,7 @@ $user = $_SESSION['user'];
             <h2 class="text-3xl font-bold text-gray-800">
                 <?php echo htmlspecialchars($user['first_name']); ?>
                 <?php echo ' '; ?>
-                <?php echo htmlspecialchars($user['last_name']); ?>
+                <?php echo htmlspecialchars($user['last_name']); ?> 
             </h2>
             <p class="text-gray-600">@<?php echo htmlspecialchars($user['username']); ?></p>
         </div>
@@ -62,8 +62,8 @@ $user = $_SESSION['user'];
     <!-- Profile Navigation -->
     <div class="bg-white shadow-md mt-4 rounded-lg">
         <div class="container mx-auto px-4 py-2 flex justify-center space-x-8">
-            <a href="profile.php" class="text-blue-600 font-semibold hover:text-blue-700">Posts</a>
-            <a href="about.php" class="text-gray-600 font-semibold hover:text-gray-800">About</a>
+            <a href="profile.php" class="text-gray-600 font-semibold hover:text-gray-800">Posts</a>
+            <a href="about.php" class="text-blue-600 font-semibold hover:text-blue-700">About</a>
             <a href="#" class="text-gray-600 font-semibold hover:text-gray-800">Friends</a>
             <a href="#" class="text-gray-600 font-semibold hover:text-gray-800">Photos</a>
             <a href="#" class="text-gray-600 font-semibold hover:text-gray-800">More</a>

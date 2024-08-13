@@ -214,7 +214,7 @@ $user = $_SESSION['user'];
                                 </div>
                             </div>
                         </div>
-                        <p class="text-gray-600 mt-2">${post.content}</p>
+                        <p class="text-gray-600">${post.content}</p>
                     </div>
                 `;
                 postsContainer.appendChild(postElement);
