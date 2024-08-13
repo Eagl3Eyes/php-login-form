@@ -55,12 +55,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Form</title>
+    <title>Welcome to Facebook</title>
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body class="flex items-center justify-center min-h-screen bg-gray-100">
     <div class="w-full max-w-sm">
+        <div class="mb-10">
+            <h1 class="text-blue-600 text-5xl text-center font-bold">facebook</h1>
+        </div>
         <form id="signupForm" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" method="post"
             enctype="multipart/form-data">
             <h3 class="text-center m-4 font-bold">Signup</h3>

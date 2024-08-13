@@ -20,6 +20,7 @@ $user = $_SESSION['user'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile of <?php echo htmlspecialchars($user['first_name']); ?></title>
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         .dropdown {
