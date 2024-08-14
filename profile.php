@@ -32,24 +32,24 @@ $user = $_SESSION['user'];
 <body class="bg-gray-50">
     <!-- Navbar -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <a class="text-blue-600 text-3xl font-bold" href="profile.php">facebook</a>
-        <div class="flex items-center space-x-4">
-            <!-- Search Bar for larger screens -->
-            <input type="text" placeholder="Search Facebook"
-                class="hidden md:block px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <!-- Navigation Links -->
-            <button class="text-blue-600 font-semibold hover:underline">Home</button>
-            <a href="profile.php" class="text-blue-600 font-semibold hover:underline">Profile</a>
-            <a href="logout.php" class="text-blue-600 font-semibold hover:underline" id="logout">Logout</a>
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a class="text-blue-600 text-3xl font-bold" href="profile.php">facebook</a>
+            <div class="flex items-center space-x-4">
+                <!-- Search Bar for larger screens -->
+                <input type="text" placeholder="Search Facebook"
+                    class="hidden md:block px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <!-- Navigation Links -->
+                <button class="text-blue-600 font-semibold hover:underline">Home</button>
+                <a href="profile.php" class="text-blue-600 font-semibold hover:underline">Profile</a>
+                <a href="logout.php" class="text-blue-600 font-semibold hover:underline" id="logout">Logout</a>
+            </div>
         </div>
-    </div>
-    <!-- Mobile Search Bar and Menu -->
-    <div class="container mx-auto px-4 py-4 md:hidden flex flex-col space-y-4">
-        <input type="text" placeholder="Search Facebook"
-            class="px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-    </div>
-</nav>
+        <!-- Mobile Search Bar and Menu -->
+        <div class="container mx-auto px-4 py-4 md:hidden flex flex-col space-y-4">
+            <input type="text" placeholder="Search Facebook"
+                class="px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+    </nav>
 
 
     <!-- Cover Photo and Profile Picture Section -->
