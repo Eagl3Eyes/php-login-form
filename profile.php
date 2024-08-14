@@ -13,6 +13,8 @@ $_SESSION['last_activity'] = time();
 $user = $_SESSION['user'];
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -194,7 +196,7 @@ $user = $_SESSION['user'];
             });
         }
 
-        // Toggle dropdown visibility
+        // Toggle dropdown
         function toggleDropdown(index) {
             if (openDropdownIndex !== -1 && openDropdownIndex !== index) {
                 document.getElementById(`dropdown-${openDropdownIndex}`).classList.add('hidden');
